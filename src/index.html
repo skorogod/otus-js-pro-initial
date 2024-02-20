@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <img src="assets/logo.png" class="header__img" alt="logo" />
+      <nav class="header__nav">
+        <ul class="nav__list list">
+          <li class="list__item">
+            <a class="link" href="#">Личный кабинет</a>
+          </li>
+          <li class="list__item"><a class="link" href="#">Регистрация</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main" class="main wrapper">
+      <section class="main__left">
+        <div class="categories">
+          <h2 class="categories__title title">Категории</h2>
+          <ul class="categories__list list">
+            <li class="list__item">
+              <a class="link" href="">Докумментальные</a>
+            </li>
+            <li class="list__item">
+              <a class="link" href="">Художественные</a>
+            </li>
+            <li class="list__item"><a class="link" href="">Фантастика</a></li>
+            <li class="list__item"><a class="link" href="">Драммы</a></li>
+            <li class="list__item"><a class="link" href="">Коммиксы</a></li>
+            <li class="list__item"><a class="link" href="">Аниме</a></li>
+          </ul>
+        </div>
+        <div class="Authors">
+          <h2 class="authors__title title">Авторы</h2>
+          <ul class="authors__list list">
+            <li class="list__item">
+              <a class="link" href="">Агатта Кристи</a>
+            </li>
+            <li class="list__item"><a class="link" href="">Булгаков</a></li>
+            <li class="list__item"><a class="link" href="">Гоголь</a></li>
+            <li class="list__item"><a class="link" href="">Дюма</a></li>
+            <li class="list__item"><a class="link" href="">Лермонтов</a></li>
+            <li class="list__item"><a class="link" href="">Пушкин</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="main__center">
+        <article class="card">
+          <h3 class="card__title">Гензель и Гретель</h3>
+          <img
+            class="card__img"
+            src="assets/genzel-i-gretel.jpg"
+            alt="genzel-i-gretel"
+          />
+          <div class="card__info">
+            <p class="card__author">Якоб Гримм</p>
+            <p class="card__description">
+              На опушке леса жил бедный дровосек со своей женой и двумя детьми:
+              сыном по имени Гензель и дочерью Гретель. Семья жила впроголодь,
+              бывало и кусочка хлеба за ...
+            </p>
+            <p class="card__cost">1 500 RUB</p>
+          </div>
+        </article>
+        <article class="card">
+          <h3 class="card__title">Три мушкетёра</h3>
+          <img
+            class="card__img"
+            src="assets/tri-mushketera.jpg"
+            alt="tri-mushketera"
+          />
+          <div class="card__info">
+            <p class="card__author">Александр Дюма</p>
+            <p class="card__description">
+              Книга посвящена приключениям молодого дворянина по имени
+              д'Артаньян, отправившегося в Париж, чтобы стать мушкетёром, и трёх
+              его друзей-мушкетёров....
+            </p>
+            <p class="card__cost">1 800 RUB</p>
+          </div>
+        </article>
+        <article class="card">
+          <h3 class="card__title tit">Metro 2033</h3>
+          <img class="card__img" src="assets/metro-2033.jpg" alt="metro-2033" />
+          <div class="card__info">
+            <p class="card__author">Дмитрий Глуховский</p>
+            <p class="card__description">
+              «Метро 2033» — роман российского писателя Дмитрия Глуховского,
+              описывающий жизнь в Московском метрополитене спустя 20 лет после
+              ядерной войны.
+            </p>
+            <p class="card__cost">2 000 RUB</p>
+          </div>
+        </article>
+      </section>
+      <section class="main__right">
+        <blockquote class="quote">
+          "Чтение хороших книг — это разговор с самыми лучшими людьми прошедших
+          времен, и притом такой разговор, когда они сообщают нам только лучшие
+          свои мысли"<br /><br />Рене Декарт
+        </blockquote>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="addresses">
+        <h2 class="addresses__title title">Адреса</h2>
+        <ul class="addresses__list list">
+          <li class="list__item">
+            <a class="link" href="">г. Краснодар, ул.Ленина 34</a>
+          </li>
+          <li class="list__item">
+            <a class="link" href="">г. Краснодар, ул.Видова 86</a>
+          </li>
+        </ul>
+      </div>
+      <div class="contacts">
+        <h3 class="contacts__title title">Контакты</h3>
+        <ul class="contacts__list list">
+          <li class="contacts__phone list__item">
+            <a class="link" href="">8-861-43-23-133</a>
+          </li>
+          <li class="contacts__tg list__item">
+            <a class="link" href="">t.me/bookhouse123</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+  <script type="module" src="./index.js"></script>
+</html>

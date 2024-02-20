@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 20px;
+    background-color: rgb(36, 32, 27);
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__img {
+    width: 50px;
+    object-fit: contain;
+}
+
+.header .list__item {
+    display: inline-block;
+}
+
+.nav__list {
+    display: inline-block;
+}
+
+.nav__list .list__item:first-child::after {
+    content: " |";
+    color: whitesmoke;
+}
+
+.header .link {
+    color: whitesmoke
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: bisque;
+    padding: 0 40px;
+}
+
+.list {
+    list-style-type: none;
+}
+
+.categories__list, .authors__list {
+    font-size: 20px;
+}
+
+.categories__list .link, .authors__list .link {
+    color: black;
+}
+
+.list__item {
+    margin-top: 5px;
+}
+
+.link, .link:hover, .link:active, .link:visited {
+    text-decoration: none;
+    transition: ease;
+    display: inline-block;
+}
+
+.link:hover {
+    transform: scale(1.05);
+}
+
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    column-gap: 20px;
+}
+
+.main__center {
+    background-color: burlywood;
+}
+
+.main__center, .main__left, .main__right {
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+
+.main__left, .main__right {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.main__left {
+    align-items: flex-start;
+}
+
+.main__right {
+    align-items: flex-end;
+}
+
+.quote {
+    font-size: 20px;
+}
+
+.card {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    row-gap: 15px;
+    margin-bottom: 50px;
+    max-width: 600px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgba(207, 161, 74, 0.473);
+    margin: 20px auto;
+    padding: 10px 20px;
+}
+
+
+.card__title {
+    flex-basis: 100%;
+}
+
+.card__img {
+    max-width: 50%;
+    object-fit: contain;
+    object-position: top;
+    max-height: 300px;
+}
+
+.card__info {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    font-size: 18px;
+
+}
+
+.card__author::before {
+    content: "Автор: ";
+    font-weight: 700;
+    font-size: 18px;
+
+}
+
+.card__cost::before {
+    content: "Цена: ";
+    font-weight: 700;
+    
+}
+
+.contacts__phone::before {
+    content: "Тел: ";
+}
+
+.contacts__tg::before {
+    content: "Telegram: ";
+}
+
+.footer {
+    padding: 20px;
+    position: fixed;
+    color: rgb(185, 176, 176);
+    width: 100%;
+    bottom: 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    column-gap: 70px;
+}
+
+.footer .link {
+    color: white
+}
+
+.footer .title {
+    font-size: 18px;
+}
