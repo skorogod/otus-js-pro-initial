@@ -1,5 +1,5 @@
-import { getPath } from "../modules/getPath.js";
+import { vectorize } from "../modules/vectorize.js";
 
-const mainElement = document.querySelector('.card__cost');
-console.log(getPath(mainElement))
-console.log(mainElement);
+const argv = process.argv.slice(2);
+
+await vectorize(argv[0].replace('--filein=', ''), argv[1].replace('--fileout=', ''));
